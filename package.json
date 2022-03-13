@@ -20,9 +20,11 @@
   },
   "homepage": "https://github.com/scottdavisxx/reactv6#readme",
   "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-react": "^7.16.7",
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^8.1.0",
-    "parcel": "^1.12.3",
+    "parcel": "^2.3.2",
     "prettier": "^2.5.1"
   },
   "dependencies": {
