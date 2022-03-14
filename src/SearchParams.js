@@ -4,7 +4,7 @@ import Pet from "./Pet";
 const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
 
 const SearchParams = () => {
-  const [location, setLocation] = useState("San Jose, CA");
+  const [location, setLocation] = useState("");
   const [animal, setAnimal] = useState("");
   const [breed, setBreed] = useState("");
   const [pets, setPets] = useState([]);
@@ -12,7 +12,7 @@ const SearchParams = () => {
 
   useEffect(() => {
     requestPets();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function requestPets() {
     const res = await fetch(
