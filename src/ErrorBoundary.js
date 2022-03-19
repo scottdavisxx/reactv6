@@ -13,10 +13,10 @@ class ErrorBoundary extends Component {
   render() {
     if (this.state.hasError) {
       return (
-        <h1>
+        <h2>
           This listing has an error.{" "}
           <Link to="/">Click here to go back to the Homepage.</Link>
-        </h1>
+        </h2>
       );
     }
     return this.props.children;
