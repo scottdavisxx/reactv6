@@ -33,7 +33,7 @@ class Details extends Component {
     const { animal, breed, city, state, description, name, images } =
       this.state;
 
-    // Un comment the line below to test error boundary component. 
+    // Un comment the line below to test error boundary component.
     // throw new Error('lol it broke');
 
     return (
@@ -57,7 +57,7 @@ export default function DetailsWithErrorBoundary() {
     <ErrorBoundary>
       <DetailsWithRouter />
     </ErrorBoundary>
-  )
+  );
 }
 
 // export default withRouter(Details);

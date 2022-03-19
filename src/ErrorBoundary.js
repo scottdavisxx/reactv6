@@ -9,20 +9,21 @@ class ErrorBoundary extends Component {
   componentDidCatch(error, info) {
     // Log this to Sentry, Azure Monitor, NewRelic, TrackJS
     console.error("ErrorBoundary caught an error", error, info);
-    setTimeout(() => this.setState({redirect: true }), 5000)
+    setTimeout(() => this.setState({ redirect: true }), 5000);
   }
 
   render() {
-    if(this.state.redirect){
-      return(
-        <Redirect to="/" />
-      )
+    if (this.state.redirect) {
+      return <Redirect to="/" />;
     }
     if (this.state.hasError) {
       return (
         <h2>
           This listing has an error.{" "}
-          <Link to="/">Click here to go back to the Homepage. Or you will be automatically redirected.</Link>
+          <Link to="/">
+            Click here to go back to the Homepage. Or you will be automatically
+            redirected.
+          </Link>
         </h2>
       );
     }
