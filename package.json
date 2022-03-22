@@ -2,12 +2,11 @@
   "name": "reactv6",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "build": "react-scripts build"
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
@@ -35,8 +34,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^5.0.0"
+    "react-router-dom": "^5.2.0"
   },
   "browserslist": [
     "last 2 Chrome versions"
